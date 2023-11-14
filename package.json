@@ -1,0 +1,31 @@
+{
+  "name": "network-wholesale-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "upload": "ts-node ./script/upload.ts",
+    "dev": "nodemon ./src/app.ts",
+    "build": "tsc --build",
+    "start": "node ./dist/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.1494.0",
+    "axios": "^1.6.1",
+    "csvtojson": "^2.0.10",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "joi": "^17.11.0",
+    "mongoose": "^8.0.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.9.0",
+    "nodemon": "^3.0.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  }
+}
